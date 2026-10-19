@@ -1,0 +1,42 @@
+name: Feature request
+description: Propose a new command, SDK module or CLI behaviour.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      multiple: true
+      options:
+        - CLI (probe)
+        - Dashboard (probe ui)
+        - probe-core
+        - probe-okhttp
+        - probe-lifecycle
+        - probe-hilt
+        - Wire protocol
+        - Docs
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What an agent or script cannot do today, and how you work around it.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Command names, input/output JSON, or flags you have in mind.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: Needs a wire protocol change (docs/protocol.md)
+        - label: Could be an app-defined command instead of a built-in one
