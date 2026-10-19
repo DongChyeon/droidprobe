@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>droidprobe</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="app.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <span class="brand">droidprobe</span>
+  <span class="conn" id="conn"><span class="dot"></span><span id="conn-text">connecting</span></span>
+  <span class="target" id="target"></span>
+  <span class="spacer"></span>
+  <span class="mode" id="mode"></span>
+</header>
+<div class="banner" id="banner" hidden></div>
+<div class="layout">
+  <nav class="nav" id="nav">
+    <a href="#overview" data-panel="overview">Overview</a>
+    <a href="#network" data-panel="network">Network <span class="count" id="count-network"></span></a>
+    <a href="#events" data-panel="events">Events <span class="count" id="count-events"></span></a>
+    <a href="#state" data-panel="state">State</a>
+    <a href="#commands" data-panel="commands">Commands</a>
+    <a href="#mocks" data-panel="mocks">Mocks</a>
+  </nav>
+  <main id="main">
+    <section class="panel" id="panel-overview"></section>
+    <section class="panel" id="panel-network"></section>
+    <section class="panel" id="panel-events"></section>
+    <section class="panel" id="panel-state"></section>
+    <section class="panel" id="panel-commands"></section>
+    <section class="panel" id="panel-mocks"></section>
+  </main>
+</div>
+</body>
+</html>
